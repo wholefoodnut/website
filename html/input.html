@@ -10,7 +10,9 @@
     <title>The Whole Food Nut</title>	
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-		<meta name="author" content="">
+    <meta name="author" content="">
+    <script src="../js/input.js"></script>
+
 	
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -47,136 +49,34 @@
 <!--BODY-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<div class="container">
-            <div class="form-row">
+            <div name="swap1" class="form-row">
                     <div class="col-md-2 mb-2">
                       <label for="validationServer01">Quantity</label>
-                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
+                      <input type="text" class="form-control is-valid" id="validationServer01" name="qfood1" placeholder="How much" required>
                     </div>
                     <div class="col-md-4 mb-3">
                       <label for="validationServer02">Food Item</label>
-                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
+                      <input type="text" class="form-control is-valid" id="validationServer02" name="food1" placeholder="What is it"  required>
                     </div>
                     <div class="col-md-2 mb-3">
                             <label for="validationServer02">Type</label>
                       <div class="form-group">
-                            <select class="custom-select" required>
+                            <select class="custom-select" name="macro1" required>
                               <option value="">Select</option>
                               <option value="1">Fat</option>
                               <option value="2">Carb</option>
-                              <option value="3">Marco</option>
+                              <option value="3">Protien</option>
                             </select>
                             <div class="invalid-feedback">Example invalid custom select feedback</div>
                           </div>    
                     </div>  
             </div><!--.row-->
 
-            <div class="form-row">
-                    <div class="col-md-2 mb-2">
-                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                            <div class="form-group">
-                            <select class="custom-select" required>
-                              <option value="">Select</option>
-                              <option value="1">Fat</option>
-                              <option value="2">Carb</option>
-                              <option value="3">Marco</option>
-                            </select>
-                            <div class="invalid-feedback">Example invalid custom select feedback</div>
-                          </div>    
-                    </div>  
-            </div><!--.row-->
-
-            <div class="form-row">
-                    <div class="col-md-2 mb-2">
-                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                      <div class="form-group">
-                            <select class="custom-select" required>
-                              <option value="">Select</option>
-                              <option value="1">Fat</option>
-                              <option value="2">Carb</option>
-                              <option value="3">Marco</option>
-                            </select>
-                            <div class="invalid-feedback">Example invalid custom select feedback</div>
-                          </div>    
-                    </div>  
-            </div><!--.row-->
-
-            <div class="form-row">
-                    <div class="col-md-2 mb-2">
-                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                            <div class="form-group">
-                            <select class="custom-select" required>
-                              <option value="">Select</option>
-                              <option value="1">Fat</option>
-                              <option value="2">Carb</option>
-                              <option value="3">Marco</option>
-                            </select>
-                            <div class="invalid-feedback">Example invalid custom select feedback</div>
-                          </div>    
-                    </div>  
-            </div><!--.row-->
-            
-            <div class="form-row">
-                    <div class="col-md-2 mb-2">
-                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
-                      <div class="valid-feedback">
-                        Quantity Used
-                    </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
-                      <div class="valid-feedback">
-                       Enter food item
-                      </div>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                            <div class="form-group">
-                            <select class="custom-select" required>
-                              <option value="">Select</option>
-                              <option value="1">Fat</option>
-                              <option value="2">Carb</option>
-                              <option value="3">Marco</option>
-                            </select>
-                            <div class="invalid-feedback">Example invalid custom select feedback</div>
-                          </div>    
-                    </div>  
-                </div><!--.row-->
-
-                    
-            <div id="myDIV">
-                
-            </div>
-                            
-                    <button onclick="myFunction()">Add more</button>
-                    
-                    <script>
-                    function myFunction() {
-                        var para = document.createElement("P");
-                        var t = document.createTextNode("This is a paragraph.");
-                        para.appendChild(t);
-                        document.getElementById("myDIV").appendChild(para);
-                    }
-                    </script>
-                    <!--
-                        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement4
-                        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement3
-                    -->
+           
                 	<p class="center">
-                            <a href="select.html" class="btn btn-lg btn-secondary">SWAP</a>
+                            <!--<a href="select.html" class="btn btn-lg btn-secondary">SWAP</a>-->
+                            <button type="submit" onclick="getFoodinput()">SWAP</button>
+
                        </p>
                 </div>
                 </form>
@@ -186,11 +86,39 @@
 	</div>
 
 	<div class="container" id="facts">
-
-			<h3>FAT</h3>
-			<h3>CARBS</h3>
-			<h3>MACROS</h3>
-		
+      <p class="center">
+          <h1>MARCO</h1>
+        </p>
+          <h3>PROTIEN</h3>
+          <ul>
+            <li>Tempeh</li>
+            <li>Tofu</li>
+            <li>Soybeans</li>
+            <li>Beans</li>
+            <li>Lentils</li>
+            <li>Grain/Bean Pasta</li>
+            <li>Nuts/Seeds</li>
+          </ul>
+          <h3>CARBS</h3>
+          <ul>
+            <li>Quinoa</li>
+            <li>Amaranth</li>
+            <li>Teff</li>
+            <li>Wild Rice</li>
+            <li>Black/Brown</li>
+            <li>Buck Wheat</li>
+            <li>Millet</li>
+            <li>Vegetables</li>
+          </ul>
+          <h3>FAT</h3>
+          <ul>
+            <li>Avocado Oil</li>
+            <li>Coconut Oil</li>
+            <li>Olive Oil</li>
+            <li>Ghee</li>
+            <li>Nuts+Seeds</li>
+            <li>Avocados</li>
+          </ul>
 	</div>
 
 
