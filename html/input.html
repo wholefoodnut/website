@@ -49,41 +49,36 @@
 <!--BODY-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<div class="container">
-            <div name="swap1" class="form-row">
-                    <div class="col-md-2 mb-2">
-                      <label for="validationServer01">Quantity</label>
-                      <input type="text" class="form-control is-valid" id="validationServer01" name="qfood1" placeholder="How much" required>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="validationServer02">Food Item</label>
-                      <input type="text" class="form-control is-valid" id="validationServer02" name="food1" placeholder="What is it"  required>
-                    </div>
-                    <div class="col-md-2 mb-3">
-                            <label for="validationServer02">Type</label>
-                      <div class="form-group">
-                            <select class="custom-select" name="macro1" required>
-                              <option value="">Select</option>
-                              <option value="1">Fat</option>
-                              <option value="2">Carb</option>
-                              <option value="3">Protien</option>
-                            </select>
-                            <div class="invalid-feedback">Example invalid custom select feedback</div>
-                          </div>    
-                    </div>  
-            </div><!--.row-->
+    <!--DIV FOR FORM SO USER CAN INPUT FOOD ITEM-->
+    <div name="swap1" class="form-row">
+            <div class="col-md-2 mb-2">
+              <label for="validationServer01">Quantity</label>
+              <input type="text" class="form-control is-valid" id="qfood" placeholder="How much" required>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationServer02">Food Item</label>
+              <input type="text" class="form-control is-valid" id="food1"  placeholder="What is it"  required>
+            </div>
+            <div class="col-md-2 mb-3">
+                    <label for="validationServer02">Type</label>
+              <div class="form-group" id="macro1">
+                    <select class="custom-select" required>
+                      <option value="">Select</option>
+                      <option value="1">Fat</option>
+                      <option value="2">Carb</option>
+                      <option value="3">Protien</option>
+                    </select>
+                    <div class="invalid-feedback">Example invalid custom select feedback</div>
+                  </div><!--.form group--> 
+            </div> <!--col-md-2 mb-3-->
 
            
-                	<p class="center">
-                            <!--<a href="select.html" class="btn btn-lg btn-secondary">SWAP</a>-->
-                            <button type="submit" onclick="getFoodinput()">SWAP</button>
-
-                       </p>
-                </div>
-                </form>
-
-
-	
-	</div>
+    <p class="center">
+      <!--<a href="select.html" class="btn btn-lg btn-secondary">SWAP</a>-->
+      <button type="submit" onclick="getFoodinput()">SWAP</button>
+     </p> 
+   </div><!--sawp1-->
+  </div><!--.container-->
 
 	<div class="container" id="facts">
       <p class="center">
