@@ -4,57 +4,63 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-		<link rel="icon" href="../images/wnf.jpg" />
-    <title>The Whole Food Nut</title>	
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <script src="../js/input.js"></script>
-
-	
-		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	 <!--LINK TO CSS-->
-	 <link rel="stylesheet"  href="../css/stylesheet.css">
-
+ <head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../images/wfn.jpg" />
+  <title>The Whole Food Nut</title>	
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="../js/input.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--LINK TO CSS-->
+  <link rel="stylesheet"  href="../css/stylesheet.css">
 </head>
-<!--START OF BODY-->
-<body>
-<!--HEADER-->
-<nav>
-	<div class="pos-f-t">
-	 <div class="collapse" id="navbarToggleExternalContent">
+
+<body><!--START OF BODY-->
+<nav><!--HEADER/NAV-->
+ <div class="pos-f-t">
+   <div class="collapse" id="navbarToggleExternalContent">
 	 <div class="masthead mb-auto" style="padding:20px;">
-	  <h4 class="text-white">Whole Food Nut</h4>
-      <span class="text-muted">
-            <a href="wholefoodnut.html" alt="" border="0" height="100" width="200">
-             HOME
-            </a> |
-                <a href="#facts" alt="" border="0" height="100" width="200">
-             FACTS
-            </a>  
-        </span>
-	</div>
-	</div>
+    <h4 class="text-white">Whole Food Nut</h4>
+    </p>
+    <span class="text-muted">
+      <a href="http://ce3d9bee.envatohostedview.com/" target="blank" border="0" height="100" width="200">
+       HOME
+      </a> |
+      <a href="#facts" alt="" border="0" height="100" width="200">
+        FACTS
+      </a>  
+    </span>
+	</div><!--.masthead-->
+	</div><!--.collapse-->
 	<nav class="navbar navbar-dark masthead mb-auto">
 	 <button class="navbar-toggler" style="color:#dbdb74;" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
-	</nav>
-	</div>
-</nav>
+	</nav><!--.navbar navbar-dark masthead mb-auto-->
+	</div><!--.pos-f-t-->
+</nav><!--.HEADER/NAV-->
 
-<!--BODY-->
+<!--BODY CONTENT-->
+<!--TOP BUTTON TO NAV TO THE TOP-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
  <div class="container">
-    <!--DIV FOR FORM SO USER CAN INPUT FOOD ITEM-->
+   <!--DIV FOR FORM SO USER CAN INPUT FOOD ITEM-->
+   <p class="center" id="main_content">
+      <img src="../images/wfn.jpg" style="width:25%;height:auto;"><br>
+  <h1 class="center">WFN FOOD SWAP</h1>
+  </p>
+  <!--START OF FOOD FORM-->
+    <form id="FormData">
     <div name="swap1" class="form-row">
+      <!--food1-->
       <div class="col-md-4 mb-3">
         <label for="validationServer02">Food Item</label>
         <input type="text" class="form-control is-valid" id="food1"  placeholder="What is it"  required>
       </div>
+      <!--macro1-->
       <div class="col-md-2 mb-3">
         <label for="validationServer02">Type</label>
       <div class="form-group">
@@ -64,89 +70,82 @@
           <option value="2">Carb</option>
           <option value="3">Protien</option>
         </select>
-   </div><!--.form group-->
- </div> <!--col-md-2 mb-3-->
-                    
- <div class="col">
-  <p class="center">
-    <!--<a href="select.html" class="btn btn-lg btn-secondary">SWAP</a>-->
-    <button type="submit" onclick="getFoodinput()">SWAP</button>
-  </p>
-
-  <p id="foodText">
-  
-  </p>
-
-  <p id="printFood">
-  
-  </p>
-
-  <p id="foodSwapText">
-  
-  </p>
-  <p id="foodSwap">
-  
-  </p>
-
-
-</div><!--.col-->
-  </div><!--sawp1-->
-</div><!--.container-->
-
-	<div class="container" id="facts">
-      <p class="center">
-          <h1>MARCO</h1>
+      </div><!--.form group-->
+     </div> <!--col-md-2 mb-3-->
+     
+     <!--BUTTONS-->
+     <div class="col">
+        <p class="center">
+          <!--<a href="select.html" class="btn btn-lg btn-secondary">SWAP</a>-->
+          <button class="btn btn-primary black" type="submit" onclick="getFoodinput()">SWAP</button>
+          <button class="btn btn-primary black" onclick="clearFormData(event);">CLEAR</button>
         </p>
-          <h3>PROTIEN</h3>
-          <ul>
-            <li>Tempeh</li>
-            <li>Tofu</li>
-            <li>Soybeans</li>
-            <li>Beans</li>
-            <li>Lentils</li>
-            <li>Grain/Bean Pasta</li>
-            <li>Nuts/Seeds</li>
-          </ul>
-          <h3>CARBS</h3>
-          <ul>
-            <li>Quinoa</li>
-            <li>Amaranth</li>
-            <li>Teff</li>
-            <li>Wild Rice</li>
-            <li>Black/Brown</li>
-            <li>Buck Wheat</li>
-            <li>Millet</li>
-            <li>Vegetables</li>
-          </ul>
-          <h3>FAT</h3>
-          <ul>
-            <li>Avocado Oil</li>
-            <li>Coconut Oil</li>
-            <li>Olive Oil</li>
-            <li>Ghee</li>
-            <li>Nuts+Seeds</li>
-            <li>Avocados</li>
-          </ul>
-	</div>
+      </div><!--.col-->  
+    </div><!--sawp1-->
+    </form><!--.FOOD FORM-->
+      
+        <p id="foodText"> </p>
+        <p id="printFood"> </p>
+        <p id="foodSwapText"> </p>
+        <p id="foodSwap"></p>
+    
+  </div><!--.container-->
 
+  <script>
+      function clearFormData(e) {
+          e.preventDefault();
+          $("#FormData")[0].reset()
+        }
+  </script>
 
+<div class="container" id="facts">
+  <p class="center">
+      <h1>MARCO</h1>
+    </p>
+    <details>
+      <summary>PROTIEN</summary>
+       <ul>
+        <li>Tempeh</li>
+        <li>Tofu</li>
+        <li>Soybeans</li>
+        <li>Beans</li>
+        <li>Lentils</li>
+        <li>Grain/Bean Pasta</li>
+        <li>Nuts/Seeds</li>
+      </ul>
+    </details>
+    <details>
+      <summary>CARBS</summary>
+       <ul>
+        <li>Quinoa</li>
+        <li>Amaranth</li>
+        <li>Teff</li>
+        <li>Wild Rice</li>
+        <li>Black/Brown</li>
+        <li>Buck Wheat</li>
+        <li>Millet</li>
+        <li>Vegetables</li>
+      </ul>
+      </details>
+  <details>
+      <summary>FAT</summary>
+      <ul>
+        <li>Avocado Oil</li>
+        <li>Coconut Oil</li>
+        <li>Olive Oil</li>
+        <li>Ghee</li>
+        <li>Nuts+Seeds</li>
+        <li>Avocados</li>
+      </ul>
+    </details>
 
-<!--FOOTER
-<footer>
-	<div class="footer">
-			<a href="contact.html" class="footerlinks">Contact</a>
-		</nav>
-	</div>
-</footer>
--->
+</div>
   <!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->	
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="../js/top.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
 <!--END OF BODY-->
  </body>
 </html>
