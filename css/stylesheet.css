@@ -5,7 +5,10 @@ body{
 	margin-left:5%;
 	margin-right:5%;
 	background: linear-gradient(rgba(77, 77, 77, 0.3), #ec857d, #ea954f, #dbdb74, #73536b ); /* Standard syntax (must be last) */
-	background-attachment: scroll;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-n;
+    background-size: cover;
 }
 
 
