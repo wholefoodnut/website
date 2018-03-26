@@ -6,36 +6,38 @@ function getFoodinput(){
 
     //Print user input        
     data.push(getMac);
-    //data.push(getitem);
+    data.push(getitem);
 
-    /*Print array elements     
+    /*Print array elements*/     
     var newString = ' ';
-    for(var i = 0; i < data.length; i++){
+    for(var i = 0; i < data.length; i++){  
         newString.concat(data[i] + ' ' );
+        newString.concat(data[i] + ' <br/> ' );
     }
     //Prints before array
-    var text = 'Your food item: ';
+    var text = '<strong>Your food item: </strong> ';
     document.getElementById('foodText').innerHTML = text;
     //Prints data pushed into data array 
     document.getElementById('printFood').innerHTML = data.toString();
-    */
+
 
     //Checking array for food marco # to switch 
     for(var i=0; i<data.length;i++){
         if (data[i] == 0){
-            data.push('You did not select anything');
+            data.pop(getMac);
+            data.push('<br/> You did not select anything ');
         }
         if (data[i] == 1){
             data.pop(getMac);
-            data.push('Avocado Oil, Cocunut Oil, Olive Oil')
+            data.push('<br/> Avocado Oil, Cocunut Oil, Olive Oil\n')
         }
         if (data[i] == 2){
             data.pop(getMac);
-            data.push('Quinoa, Amaranth, Teff');
+            data.push('<br/> Quinoa, Amaranth, Teff\n');
         }
         if (data[i] == 3){
             data.pop(getMac);
-            data.push('Tempeh, tofo, soybeans' );    
+            data.push('<br/>Tempeh, tofu, soybeans\n' );    
         }
         
     }
@@ -44,7 +46,7 @@ function getFoodinput(){
     for(var i = 0; i < data.length; i++){
         new2String.concat(data[i] + ' ' );
     }
-    var text = 'Your food swap recommendation: ';
+    var text = '<strong>Your food swap recommendation: </strong>';
     document.getElementById('foodSwapText').innerHTML = text;
     //Prints data pushed into data array 
     document.getElementById('foodSwap').innerHTML = data.toString();
