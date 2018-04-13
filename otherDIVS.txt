@@ -1,0 +1,105 @@
+ <div class="form-row">
+                    <div class="col-md-2 mb-2">
+                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                            <div class="form-group">
+                            <select class="custom-select" required>
+                              <option value="">Select</option>
+                              <option value="1">Fat</option>
+                              <option value="2">Carb</option>
+                              <option value="3">Marco</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                          </div>    
+                    </div>  
+            </div><!--.row-->
+
+            <div class="form-row">
+                    <div class="col-md-2 mb-2">
+                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                      <div class="form-group">
+                            <select class="custom-select" required>
+                              <option value="">Select</option>
+                              <option value="1">Fat</option>
+                              <option value="2">Carb</option>
+                              <option value="3">Marco</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                          </div>    
+                    </div>  
+            </div><!--.row-->
+
+            <div class="form-row">
+                    <div class="col-md-2 mb-2">
+                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                            <div class="form-group">
+                            <select class="custom-select" required>
+                              <option value="">Select</option>
+                              <option value="1">Fat</option>
+                              <option value="2">Carb</option>
+                              <option value="3">Marco</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                          </div>    
+                    </div>  
+            </div><!--.row-->
+            
+            <div class="form-row">
+                    <div class="col-md-2 mb-2">
+                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="How much" required>
+                      <div class="valid-feedback">
+                        Quantity Used
+                    </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="What is it"  required>
+                      <div class="valid-feedback">
+                       Enter food item
+                      </div>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                            <div class="form-group">
+                            <select class="custom-select" required>
+                              <option value="">Select</option>
+                              <option value="1">Fat</option>
+                              <option value="2">Carb</option>
+                              <option value="3">Marco</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                          </div>    
+                    </div>  
+                </div><!--.row-->
+
+                    
+            <div id="myDIV">
+                
+            </div>
+                            
+                    <button onclick="myFunction()">Add more</button>
+                    
+                    <script>
+                    function myFunction() {
+                        var para = document.createElement("P");
+                        var t = document.createTextNode("This is a paragraph.");
+                        para.appendChild(t);
+                        document.getElementById("myDIV").appendChild(para);
+                    }
+                    </script>
+                    <!--
+                        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement4
+                        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement3
+                    -->
