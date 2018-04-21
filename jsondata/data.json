@@ -1,0 +1,10 @@
+{
+	"Fat": "Select a food item, Butter,Cheese,Whole Milk",
+	"Carb": "Select a food item, White Bread,Pasta, White Rice",
+	"Protien": "Select a food item, Chicken,Talapia,Beef",
+	"Butter":	"Avocado Oil",
+	"Cheese":	"Ghee",
+	"WholeMilk":	"Almond Milk",
+	"base": "Please choose from above"
+}
+
