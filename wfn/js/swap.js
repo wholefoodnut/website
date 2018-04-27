@@ -39,7 +39,7 @@ SList.slist3 = {
  displayed after the user selects an option in 3rd dropdown list
 */
 SList.scontent = {
- "Avocado Oil": '<img class="center" src="images/avoOil.jpg"><br>Is pressed from the fleshy pulp surrounding the avocado pit, making it one of the few edible oils not derived from seed. This pulp produces an oil full of healthy fats, including oleic acid and essential fatty acids',
+ "Avocado Oil": '<a href="avo.php">Nutrition Comparison</a></br><br> <img class="center" style="width:25%" src="images/avoOil.jpg"><br>Is pressed from the fleshy pulp surrounding the avocado pit, making it one of the few edible oils not derived from seed. This pulp produces an oil full of healthy fats, including oleic acid and essential fatty acids',
  "Coconut Oil": 'Refined, bleached, and deodorized (RBD) oil is usually made from copra, dried coconut kernel, which is pressed in a heated hydraulic press to extract the oil. This yields practically all the oil present, amounting to more than 60% of the dry weight of the coconut.',
  "Ghee": 'Ghee differs slightly in its production. The process of creating traditional clarified butter is complete once the water is evaporated and the fat (clarified butter) is separated from the milk solids. However, the production of ghee includes simmering the butter, which makes it nutty-tasting and aromatic.',
  "Almond Milk": 'It contains neither cholesterol nor lactose, and is often consumed by those who are lactose-intolerant and others who wish to avoid dairy products, including vegans. Commercial almond milk comes in sweetened, unsweetened, plain, vanilla and chocolate flavors, and is usually fortified with micronutrients.',

@@ -1,3 +1,4 @@
+
 <!--
 	DENISE THUY VY NGUYEN =^.,.^=
 	3/6/2018
@@ -11,8 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <script src="../js/input.js"></script>
-  <script src="../js/input2.js"></script>
+  <script src="../js/minput.js"></script>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--LINK TO CSS-->
@@ -53,75 +53,15 @@
       <img src="../images/wfn.jpg" style="width:25%;height:auto;"><br>
   <h1 class="center">WFN FOOD SWAP</h1>
   </p>
-
-
-  <div>
-    Calling JSON File
-
-    <!--
-      https://stackoverflow.com/questions/19706046/how-to-read-an-external-local-json-file-in-javascript
-    -->
-
-    <p>Take a look at <a href="../js/demo.txt" target="_blank">demo.txt</a></p>
-
-    <p id="demo">
-
-    </p>
-<!--
-https://www.w3schools.com/js/tryit.asp?filename=tryjson_ajax_array
--->
-    <script>
-
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var myArr = JSON.parse(this.responseText);
-                document.getElementById("demo").innerHTML = myArr[0];
-            }
-        };
-        xmlhttp.open("GET", "../js/demo.txt", true);
-        xmlhttp.send();
-        
-        </script>
-
-  </div>
-
-
-
-  <div>
-      <input type='button' id='btnLoad' value='Load JSON' onclick='printJson();'>
-  </div>
-  <p id="jsonTest">  </p>
-  <p id="jsonTestPP">  </p>
   
-<!--<script>
-  printJson();
-  function printJson(){
-      var food = '{"foodSwap":[' +
-      '{"macro":"1","foodItem":"Avo Oil" },' +
-      '{"macro":"2","foodItem":"Quinoa" },' +
-      '{"macro":"3","foxodItem":"Tempeh" }]}';
-      
-
-      obj = JSON.parse(food);
-      document.getElementById("jsonTest").innerHTML = 
-      obj.foodSwap[1].macro + " " + obj.foodSwap[1].foodItem;  
-  }
-</script>
--->
   <!--START OF FOOD FORM-->
     <form id="FormData">
     <div name="swap1" class="form-row">
-      <!--food1-->
-      <div class="col-md-4 mb-3">
-        <label for="validationServer02">Food Item</label>
-        <input type="text" class="form-control is-valid" id="food1"  placeholder="What is it"  required>
-      </div>
       <!--macro1-->
       <div class="col-md-2 mb-3">
-        <label for="validationServer02">Type</label>
+        <label for="">Type</label>
       <div class="form-group">
-        <select class="custom-select" id="macro1" required>
+        <select class="" id="macro1" required>
           <option value="">Select</option>
           <option value="1">Fat</option>
           <option value="2">Carb</option>
