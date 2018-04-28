@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="utf-8">
-  <link rel="icon" href="images/buckwheat.jpg" />
+  <link rel="icon" href="images/quinoa.jpg" />
   <title>The Whole Food Nut</title>	
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -20,10 +20,10 @@ google.charts.setOnLoadCallback(drawMaterial);
 
 function drawMaterial() {
     var data = google.visualization.arrayToDataTable([
-						      ['Comparison', 'Buckwheat', 'Whitebread'],
-						      ['Total Fat', 1, 2],
-						      ['Cholesterol', 0, 0],
-						      ['Sodium', 7, 140],
+						      ['Comparison', 'Quinoa', 'Pasta'],
+						      ['Total Fat', 4, 21],
+						      ['Cholesterol', 0, 20],
+						      ['Sodium', 13, 560],
       
 						      ]);
 
